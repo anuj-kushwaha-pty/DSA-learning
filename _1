@@ -1,0 +1,7 @@
+#include<iostream>
+Using namespace std;
+Int main(vooid){
+              int n;
+              cin>> n;
+              cout<<"value of n is:"<<endl;
+}              
