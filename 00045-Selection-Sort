@@ -1,4 +1,5 @@
 // Selection Sort
+// Use only in Small size array
 class Solution {
 public:
     vector<int> sortArray(vector<int>& nums) {
