@@ -1,0 +1,23 @@
+// Bubble sort (Onlly for learning not an optimal soution it will give tle)
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        int n = nums.size();
+
+        for (int i = 0; i < n - 1; i++) { // for round 1 to n-1
+            bool swapped = false;
+
+            for (int j = 0; j < n - i - 1; j++) {
+                if (nums[j] > nums[j + 1]) {
+                    swap(nums[j], nums[j + 1]);
+                    swapped = true;
+                }
+            }
+
+            // Optimization: If no two elements were swapped in inner loop, array is sorted
+            if (!swapped)
+                break;
+        }
+
+        return nums;
+    }
