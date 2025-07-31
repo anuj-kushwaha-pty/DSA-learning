@@ -1,0 +1,18 @@
+char highestOccurringChar(string str) {
+    int freq[256] = {0};// ASCII size
+
+    // Count frequency
+    for(char c : str){
+        freq[c]++;
+
+    }
+    // Find the char with max frequency
+    int maxcount = 0, result = 0;
+    for(char c : str){
+        if(freq[c]>maxcount){
+            maxcount = freq[c]; 
+            result = c;
+        }
+    }
+    return result;
+}
